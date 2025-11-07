@@ -128,12 +128,14 @@
     <ClCompile Include="CODEBASE.cpp" />
     <ClCompile Include="LERANINNG IN DEPRESSION.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="STRANGE.cpp" />
     <ClCompile Include="STUDYING.cpp" />
     <ClCompile Include="教学文件.cpp" />
     <ClCompile Include="逆波兰表达式计算器.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CODEBASE.h" />
+    <ClInclude Include="STRANGE.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

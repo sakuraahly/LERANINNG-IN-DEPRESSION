@@ -57,7 +57,15 @@ int* re_duplicate_array(int arr[], int n, int* new_size);//数组去重函数.
 
 void heapify(int arr[], int n, int i);//堆排序的辅助函数.(用于保证堆是最大堆)
 
+void ArrayShift(int a[], int n, int m);//数组循环右移,n是a[]的实际元素个数,m是数组元素向右移动的个数.
 
+int isPerfectSquare(int n);//判断一个数是否是完全平方数.
+
+int getOnlynce(int n, int arr[]);//找到一组数据中只出现一次的数据.(备注,这是个不完善版本,目前只能找到一堆偶数个数字中唯一一个这样的数字)
+
+int canArrangeWithoutAdjacent(int arr[], int n);//判断数组能否重新排列使得相同的元素不相邻.
+
+int mostFrequent(int arr[], int n);//找出出现最为频繁的数字
 
 #endif
 

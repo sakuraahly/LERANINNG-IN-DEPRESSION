@@ -421,3 +421,98 @@ void heapify(int arr[], int n, int i) {//
 	}
 }
 
+void ArrayShift(int a[], int n, int m) {//数组循环右移
+	int remainder = (m % n);
+	int mul = (m / n);
+
+	if (remainder == 0) {
+		return;
+	}
+	for (int i = 0; i < (n / 2); i++) {
+		int temp;
+		temp = a[n - 1 - i];
+		a[n - 1 - i] = a[i];
+		a[i] = temp;
+	}
+
+	for (int i = 0; i < (remainder / 2); i++) {
+		int temp;
+		temp = a[remainder - 1 - i];
+		a[remainder - 1 - i] = a[i];
+		a[i] = temp;
+	}
+
+	for (int i = remainder, j = 0; i < (remainder + n) / 2; i++, j++) {
+		int temp;
+		temp = a[n - 1 - j];
+		a[n - 1 - j] = a[i];
+		a[i] = temp;
+	}
+
+	return;
+}
+
+int isPerfectSquare(int n)
+{
+	for (int i = 1; i * i <= n; i++)
+	{
+		if (i * i == n)
+		{
+			return 1;
+		}
+	}
+	return 0;
+}
+
+//n是数组arr的元素数量
+int getOnlynce(int n,int arr[])//找到一组数据中只出现一次的数据.(备注,这是个不完善版本,目前只能找到一堆偶数个数字中唯一一个这样的数字)
+{
+	
+	int result = 0;
+	
+
+	// 读取 n-1 个颜色并进行异或运算
+	for (int i = 0; i < n - 1; i++) {
+		result ^= arr[i];  // 异或运算
+	}
+
+	printf("%d", result);
+	return 0;
+}
+//总之这个数组是用来判断是否可以将数组重新排列,使得相同的元素不相邻.
+int canArrangeWithoutAdjacent(int arr[], int n) {
+	if (n <= 1) return 1;
+
+	// 统计每个元素的频率
+	int maxFreq = 0;
+	int maxElement = arr[0];
+
+	// 找到出现次数最多的元素
+	for (int i = 0; i < n; i++) {
+		int count = 1;
+		for (int j = i + 1; j < n; j++) {
+			if (arr[j] == arr[i]) {
+				count++;
+			}
+		}
+		if (count > maxFreq) {
+			maxFreq = count;
+			maxElement = arr[i];
+		}
+	}
+
+	// 判断条件：最多出现的元素不能超过 (n+1)/2
+	return maxFreq <= (n + 1) / 2;
+}
+//这个函数用来找到出现次数最多的元素.
+int mostFrequent(int arr[],int n)
+{
+	int freq = 0;
+	int mostfreq = 0;
+
+	
+	
+
+
+	return mostfreq;
+}
