@@ -1,8 +1,9 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include "CODEBASE.h"
 #include<stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define _CRT_SECURE_NO_WARNINGS
+
 int sp = 666;
 
 void swap(int* a, int* b)//交换两个整数的值的函数
@@ -508,7 +509,15 @@ int canArrangeWithoutAdjacent(int arr[], int n) {
 int mostFrequent(int arr[],int n)
 {
 	int freq = 0;
-	int mostfreq = 0;
+	int mostfreq = arr[0];
+	int max = 0;//这个变量用来记录最大出现次数.
+	int* count = ((int*)calloc(n, sizeof(int)));//动态分配一个数组用来记录每个元素出现的次数.)
+
+	//接下来尝试找到出现次数最多的元素.
+	for (int i = 0;  i < n; i++) {
+		
+
+	}
 
 	
 	

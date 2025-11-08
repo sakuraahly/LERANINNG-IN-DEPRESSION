@@ -39,7 +39,7 @@
     <ClCompile Include="教学文件.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="STRANGE.cpp">
+    <ClCompile Include="DATASTRUCT.cpp">
       <Filter>源文件\头文件关联文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -47,7 +47,7 @@
     <ClInclude Include="CODEBASE.h">
       <Filter>头文件\自己写的包</Filter>
     </ClInclude>
-    <ClInclude Include="STRANGE.h">
+    <ClInclude Include="DATASTRUCT.h">
       <Filter>头文件\自己写的包</Filter>
     </ClInclude>
   </ItemGroup>
